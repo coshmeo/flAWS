@@ -1,0 +1,8 @@
+level one
+you can view the entire contents of the flaws.cloud bucket here:
+http://flaws.cloud.s3.amazonaws.com/
+
+from there, you can see that there is a secret file. 
+you can naviate to that file by visiting this address:
+http://flaws.cloud/[secret file name]
+
