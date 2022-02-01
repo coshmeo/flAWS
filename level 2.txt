@@ -10,3 +10,12 @@ anyway then it's simply a matter of copy and pasting teh command on the first hi
 aws s3 --profile [your profile name] ls s3://level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.cloud
 which lists the contents of this bucket, showing the secret file.
 you can then navigate to that file in the same fashion as the 1st level.
+
+Lesson learned
+Similar to opening permissions to "Everyone", people accidentally open permissions to "Any Authenticated AWS User". They might mistakenly think this will only be users of their account, when in fact it means anyone that has an AWS account.
+Examples of this problem
+
+    Open permissions for authenticated AWS user on Shopify (link) 
+
+Avoiding the mistake
+Only open permissions to specific AWS users. 
