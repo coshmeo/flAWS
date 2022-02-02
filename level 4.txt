@@ -61,3 +61,11 @@ ls
 meta-data  setupNginx.sh
 
 cat the setup file and you will find the username and password.
+
+Lesson learned
+AWS allows you to make snapshots of EC2's and databases (RDS). 
+The main purpose for that is to make backups, but people sometimes use snapshots to get access back to their own EC2's 
+when they forget the passwords. This also allows attackers to get access to things. 
+Snapshots are normally restricted to your own account, so a possible attack would be an attacker getting access to an AWS key 
+that allows them to start/stop and do other things with EC2's and then uses that to snapshot an EC2 and spin up an EC2 with 
+that volume in your environment to get access to it. Like all backups, you need to be cautious about protecting them. 
