@@ -1,5 +1,5 @@
 # level 2
-After much fussing with getting AWS CLI installed, I was finally able to get this one to work. You have to add User Name header to the csv file with your access keys, and add the name you want to use on the second line.
+After installing the AWS CLI installed, I was finally able to get this one to work. You have to add User Name header to the csv file with your access keys, and add the name you want to use on the second line.
 
 then, you have to run the command:
 `aws configure import --csv file://[path to your csv file]`
